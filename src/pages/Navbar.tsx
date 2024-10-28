@@ -29,14 +29,15 @@ const Navbar = () => {
             </li>
             <li>
               <a href="#" className="block px-4 py-2 hover:bg-gray-700">
-                About Us
+                Blogs
               </a>
             </li>
             <li>
               <a href="#" className="block px-4 py-2 hover:bg-gray-700">
-                Blogs
+                About Us
               </a>
             </li>
+
             <li>
               <a href="#" className="block px-4 py-2 hover:bg-gray-700">
                 Contact
