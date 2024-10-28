@@ -1,5 +1,5 @@
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Container from "../shared/Container";
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -42,16 +42,16 @@ const Footer = () => {
             <h3 className="mb-2 text-lg font-bold">Follow Us</h3>
             <div className="flex space-x-4">
               <a href="#" className="text-xl hover:text-blue-500">
-                <FaFacebook />
+                <Facebook />
               </a>
               <a href="#" className="text-xl hover:text-blue-400">
-                <FaTwitter />
+                <Twitter />
               </a>
               <a href="#" className="text-xl hover:text-pink-500">
-                <FaInstagram />
+                <Instagram />
               </a>
               <a href="#" className="text-xl hover:text-blue-700">
-                <FaLinkedin />
+                <Linkedin />
               </a>
             </div>
           </div>
