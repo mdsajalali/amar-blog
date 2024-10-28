@@ -12,30 +12,30 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-gray-800 text-white md:p-4 py-4 px-3">
+    <div className="bg-gray-800 px-3 py-4 text-white md:p-4">
       <Container>
-        <nav className="flex justify-between items-center">
-          <Link to="/" className="text-2xl font-semibold ">
+        <nav className="flex items-center justify-between">
+          <Link to="/" className="text-2xl font-semibold">
             Amar Blog
           </Link>
           <div
-            className="md:hidden cursor-pointer"
+            className="cursor-pointer md:hidden"
             onClick={toggleMenu}
             aria-expanded={isOpen}
             aria-controls="navbar-menu"
           >
-            {isOpen ? <CgClose size={20} /> : <MenuIcon size={20}/>}
+            {isOpen ? <CgClose size={20} /> : <MenuIcon size={20} />}
           </div>
           <ul
             id="navbar-menu"
-            className={`md:flex md:items-center md:space-x-4 absolute md:static bg-gray-800 w-full md:w-auto transition-all duration-300 ease-in-out ${
-              isOpen ? "top-[60px] -left-0 px-3" : "top-[-200px] -left-0 px-3"
+            className={`absolute w-full bg-gray-800 transition-all duration-300 ease-in-out md:static md:flex md:w-auto md:items-center md:space-x-4 ${
+              isOpen ? "-left-0 top-[60px] px-3" : "-left-0 top-[-200px] px-3"
             }`}
           >
             <li>
               <Link
                 to="/"
-                className="block px-4 py-2 text-[16px] font-semibold  hover:bg-gray-700"
+                className="block px-4 py-2 text-[16px] font-semibold hover:bg-gray-700"
                 onClick={toggleMenu}
               >
                 Home
@@ -44,7 +44,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/"
-                className="block px-4 py-2 text-[16px] font-semibold  hover:bg-gray-700"
+                className="block px-4 py-2 text-[16px] font-semibold hover:bg-gray-700"
                 onClick={toggleMenu}
               >
                 Blogs
@@ -62,7 +62,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/contact"
-                className="block text-[16px] font-semibold  px-4 py-2 hover:bg-gray-700"
+                className="block px-4 py-2 text-[16px] font-semibold hover:bg-gray-700"
                 onClick={toggleMenu}
               >
                 Contact

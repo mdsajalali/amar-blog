@@ -3,18 +3,18 @@ import Container from "../shared/Container";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8">
+    <footer className="bg-gray-800 py-8 text-white">
       <Container>
-        <div className="flex flex-col md:flex-row justify-between items-start">
-          <div className="mb-6 md:mb-0 max-w-[300px]">
-            <h3 className="text-lg font-bold mb-2">About Us</h3>
+        <div className="flex flex-col items-start justify-between md:flex-row">
+          <div className="mb-6 max-w-[300px] md:mb-0">
+            <h3 className="mb-2 text-lg font-bold">About Us</h3>
             <p className="text-sm">
               Welcome to our blog! We share insights, stories, and tips to
               enrich your life. Join us on our journey!
             </p>
           </div>
           <div className="mb-6 md:mb-0">
-            <h3 className="text-lg font-bold mb-2">Quick Links</h3>
+            <h3 className="mb-2 text-lg font-bold">Quick Links</h3>
             <ul>
               <li>
                 <a href="#" className="text-sm hover:underline">
@@ -39,7 +39,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-bold mb-2">Follow Us</h3>
+            <h3 className="mb-2 text-lg font-bold">Follow Us</h3>
             <div className="flex space-x-4">
               <a href="#" className="text-xl hover:text-blue-500">
                 <FaFacebook />

@@ -1,36 +1,36 @@
 const BlogContactForm = () => {
   return (
-    <div className="rounded-md p-5 mx-auto  max-w-5xl  w-full ">
-      <h1 className="text-2xl text-white md:text-[40px] font-semibold md:pb-10 pb-5">
+    <div className="mx-auto w-full max-w-5xl rounded-md ">
+      <h1 className="pb-5 text-2xl font-semibold text-white md:pb-10 md:text-[40px]">
         Get in Touch with Us
       </h1>
       <form>
-        <div className="flex flex-col -mt-16 md:flex-row gap-[10px] md:gap-4 mb-4">
+        <div className="-mt-16 mb-4 flex flex-col gap-[10px] md:flex-row md:gap-4">
           <input
             type="text"
             placeholder="Name"
-            className="border rounded p-3 w-full  outline-none text-[12px] md:text-[14px] text-black"
+            className="w-full rounded border p-3 text-[12px] text-black outline-none md:text-[14px]"
             required
           />
           <input
             type="email"
             placeholder="Email"
-            className="border rounded p-3 w-full  outline-none text-[12px] mt-1 md:mt-0 md:text-[14px] text-black"
+            className="mt-1 w-full rounded border p-3 text-[12px] text-black outline-none md:mt-0 md:text-[14px]"
             required
           />
         </div>
 
-        <div className="flex flex-col mb-4">
+        <div className="mb-4 flex flex-col">
           <textarea
             placeholder="Message"
-            className="border rounded p-3  outline-none text-[12px] md:text-[14px] text-black"
+            className="rounded border p-3 text-[12px] text-black outline-none md:text-[14px]"
             required
             rows={4}
           ></textarea>
         </div>
         <button
           type="submit"
-          className="bg-white hover:bg-[#263587] hover:text-white  rounded border text-black transition-all hover:bg-primary py-[14px] px-16 md:px-7   text-[14px] md:text-[18px] font-semibold "
+          className="hover:bg-primary rounded border bg-white px-16 py-[14px] text-[14px] font-semibold text-black transition-all hover:bg-[#263587] hover:text-white md:px-7 md:text-[18px]"
         >
           Submit Comment
         </button>
