@@ -1,8 +1,7 @@
 import { useState } from "react";
 import Container from "../shared/Container";
 import { Link } from "react-router-dom";
-import { MenuIcon } from "lucide-react";
-import { CgClose } from "react-icons/cg";
+import { MenuIcon, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +23,7 @@ const Navbar = () => {
             aria-expanded={isOpen}
             aria-controls="navbar-menu"
           >
-            {isOpen ? <CgClose size={20} /> : <MenuIcon size={20} />}
+            {isOpen ? <X size={20} /> : <MenuIcon size={20} />}
           </div>
           <ul
             id="navbar-menu"
