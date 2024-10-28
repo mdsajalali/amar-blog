@@ -33,7 +33,6 @@ const BlogCard = ({ blog }: BlogCardProps) => {
             <div className="h-0.5 w-4 bg-black"></div>
             <p className="text-[15px] font-medium">
               {format(new Date(blog.publishedDate), "MMM dd, yyyy")}{" "}
-              {/* Ensure it's a Date object */}
             </p>
           </div>
           <Link

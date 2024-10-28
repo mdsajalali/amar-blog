@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
 import Container from "../shared/Container";
 import { Link } from "react-router-dom";
+import { MenuIcon } from "lucide-react";
+import { CgClose } from "react-icons/cg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +15,7 @@ const Navbar = () => {
     <div className="bg-gray-800 text-white md:p-4 py-4 px-3">
       <Container>
         <nav className="flex justify-between items-center">
-          <Link to="/" className="text-xl font-bold">
+          <Link to="/" className="text-2xl font-semibold ">
             Amar Blog
           </Link>
           <div
@@ -23,7 +24,7 @@ const Navbar = () => {
             aria-expanded={isOpen}
             aria-controls="navbar-menu"
           >
-            {isOpen ? <FaTimes /> : <FaBars />}
+            {isOpen ? <CgClose size={20} /> : <MenuIcon size={20}/>}
           </div>
           <ul
             id="navbar-menu"
@@ -32,22 +33,38 @@ const Navbar = () => {
             }`}
           >
             <li>
-              <Link to="/" className="block px-4 py-2 hover:bg-gray-700">
+              <Link
+                to="/"
+                className="block px-4 py-2 text-[16px] font-semibold  hover:bg-gray-700"
+                onClick={toggleMenu}
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/" className="block px-4 py-2 hover:bg-gray-700">
+              <Link
+                to="/"
+                className="block px-4 py-2 text-[16px] font-semibold  hover:bg-gray-700"
+                onClick={toggleMenu}
+              >
                 Blogs
               </Link>
             </li>
             <li>
-              <Link to="/about" className="block px-4 py-2 hover:bg-gray-700">
+              <Link
+                to="/about"
+                className="block px-4 py-2 text-[16px] font-semibold leading-tight hover:bg-gray-700"
+                onClick={toggleMenu}
+              >
                 About Us
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="block px-4 py-2 hover:bg-gray-700">
+              <Link
+                to="/contact"
+                className="block text-[16px] font-semibold  px-4 py-2 hover:bg-gray-700"
+                onClick={toggleMenu}
+              >
                 Contact
               </Link>
             </li>
